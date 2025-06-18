@@ -6,7 +6,7 @@ export const Instruction = () => {
   useEffect(() => {
     const fetchFoodRequests = async () => {
       try {
-        const response = await fetch('http://localhost:8000/auth/food-requests');
+        const response = await fetch('https://food-donation-project-zk5l.onrender.com/auth/food-requests');
         const data = await response.json();
         setFoodRequests(data);
       } catch (error) {

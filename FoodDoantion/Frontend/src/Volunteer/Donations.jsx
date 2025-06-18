@@ -11,7 +11,7 @@ export const Donations = ({ email }) => {
 
     const fetchDonations = async () => {
       try {
-        const response = await fetch('http://localhost:8000/auth/Volunteer');
+        const response = await fetch('https://food-donation-project-zk5l.onrender.com/auth/Volunteer');
         if (!response.ok) {
           throw new Error('Network response was not ok');
         }
@@ -38,7 +38,7 @@ export const Donations = ({ email }) => {
    
 
     try {
-      const response = await fetch(`http://localhost:8000/auth/update-donation/${donationId}`, {
+      const response = await fetch(`https://food-donation-project-zk5l.onrender.com/auth/update-donation/${donationId}`, {
         method: 'PUT',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({

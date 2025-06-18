@@ -1,10 +1,11 @@
 import React, { useState } from 'react';
+import { useNavigate } from 'react-router-dom';
 import styles from './Login.module.css';
 
 export const Signup = () => {
     const [msg, setMsg] = useState('');
     const [msgType, setMsgType] = useState('');
-
+    const navigate = useNavigate();
     const handleSubmit = async (event) => {
         event.preventDefault();
         const formData = new FormData(event.target);
@@ -26,6 +27,7 @@ export const Signup = () => {
 
             if (response.ok) {
                 alert("Signup successful!");
+                navigate('/login');//redirect to donator login page
             }
         } catch (error) {
             console.error('Error:', error);

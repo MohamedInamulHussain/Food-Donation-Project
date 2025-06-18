@@ -10,7 +10,7 @@ export const Dashboard = ({ email,isActiveDashboard }) => {
         console.log("Dashboard Mounted: Fetching data...");
         const fetchDonations = async () => {
             try {
-                const response = await fetch(`http://localhost:8000/auth/filtered-Food/${email}`);
+                const response = await fetch(`https://food-donation-project-zk5l.onrender.com/auth/filtered-Food/${email}`);
                 if (!response.ok) {
                     throw new Error('Network response was not ok');
                 }

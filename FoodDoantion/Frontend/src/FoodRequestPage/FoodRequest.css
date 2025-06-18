@@ -1,0 +1,96 @@
+.FormBox{
+  position: absolute;
+  left: 140px;
+  top:130px;
+ 
+}
+#arrowBgArea{
+  height: 100%;
+  width: 20%;
+  background-color: rgba(0, 255, 255, 0);
+  position: absolute;
+  background-image: url('../assets/arrowDesign-effects.png');
+  background-size: cover;
+}
+.food-request-form {
+  width: 300px;
+  margin: 0 auto;
+  padding: 20px;
+  /* border: 1px solid #000000; */
+  border-radius: 5px;
+  background-color: #ffffff;
+}
+
+.food-request-form h2 {
+  text-align: center;
+  margin-bottom: 20px;
+  font-weight: 500;
+  
+}
+
+.food-request-form div {
+  margin-bottom: 15px;
+  border: 1px solid #45a049;
+  border-radius: 5px;
+  background-color: transparent;
+  
+}
+
+.food-request-form label {
+  display: block;
+  margin-bottom: 5px;
+  font-size: small;
+  font-weight: 300;
+ 
+}
+
+.food-request-form input[type="text"],
+.food-request-form input[type="number"] {
+  width: 94%;
+  padding: 8px;
+  border: none;
+  background-color: transparent;
+ 
+}
+
+.food-request-form input[type="checkbox"] {
+  margin-right: 8px;
+  vertical-align: middle;
+}
+
+.food-request-form .checkbox-label {
+  display: flex;
+  align-items: center;
+  margin-top: 5px;
+  
+}
+
+.food-request-form button {
+  width: 100%;
+  padding: 10px;
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 16px;
+  
+}
+
+.food-request-form button:hover {
+  background-color: #45a049;
+  box-shadow: 0px 3px 10px  rgba(0, 0, 0, 0.486);
+}
+.RequestImageArea{
+  width: 700px;
+  height:500px;
+  
+  background-color: rgba(255, 0, 0, 0);
+  background-image: url('../assets/requestPagePic.svg');
+  background-size:96%;
+  background-repeat: no-repeat;
+  background-position-x: center;
+  background-position-y: center;
+  position: absolute;
+  right:30px;
+}

@@ -1,0 +1,31 @@
+.CardBox{
+    display: flex;
+    justify-content: space-evenly;
+  
+  }
+  
+  .DashboardCard{
+    border-radius: 10px;
+    border: 1px solid black;
+    width:160px;
+    height:120px;
+    text-align: center;
+    box-shadow:  rgb(156, 156, 156) 0px 5px 10px inset;
+  }
+  .DashboardCard:hover{
+    color:#4CAF50;
+  }
+  .deliveryListBox{
+    border:1px solid black ;
+    border-radius: 10px;
+    margin-top:30px;
+    height: 210px;
+    width: 400px;
+   overflow-y:scroll;
+   scroll-behavior: smooth;
+   scrollbar-width: 2px;
+  }
+  /* card style */
+  .DonationCardActive{
+    transform: scale(0.9);
+  }

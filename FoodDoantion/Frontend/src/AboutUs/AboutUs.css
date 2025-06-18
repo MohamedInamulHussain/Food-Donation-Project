@@ -1,0 +1,232 @@
+.aboutUsContainer{
+    width: 1365px;
+    height: 550px;
+    background-color: rgb(255, 255, 255);
+    overflow-y:scroll;
+    overflow-x: hidden;
+}
+.missionArea{
+    padding-left: 50px;
+    margin-top: 100px;
+}
+.missionArea div{
+    font-weight: 500;
+    color: rgb(0, 0, 0);
+    font-size: 4.4rem;
+    
+}
+.vissionArea{
+    margin-left: 130px;
+    margin-top: 215px;
+    height:470px;
+    
+}
+.vissionArea div{
+    font-weight: 500;
+    color: rgb(0, 0, 0);
+    font-size: 4.4rem;
+    
+}
+#textContentVission{
+    background-color: rgba(0, 255, 255, 0);
+    height: 400px;
+    width: 500px;
+}
+#textContentVission p{
+    font-size: 18px;
+    text-align: left;
+    font-weight: 200;
+}
+#vissionImageSection{
+    position: relative;
+    right: -550px;
+    top: -390px;
+    filter: hue-rotate(-50deg);
+}
+.teamArea{
+    background-color: rgba(255, 153, 0, 0);
+    margin-left: 130px;
+    margin-right: 100px;
+    margin-top: 90px;
+}
+
+.TeamImgContainer{
+    height:500px;
+    width: 100%;
+    background-color: rgba(137, 43, 226, 0);
+    /* overflow-y: scroll; */
+    align-items: center;
+    /* border: 1px solid black;
+    box-shadow: 0px 0px 10px black; */
+    
+}
+.teamImgCard{
+    height: 350px;
+    width:250px;
+    margin: 20px;
+    margin-bottom: 50px;
+    background-color: rgba(128, 255, 0, 0);
+    text-align: left;
+    
+}
+#imgCardRow{
+    display: flex;
+    
+    justify-content: center;
+}
+.cardImgHolder{
+    width: 100%;
+    height: 75%;
+    background-color: cornflowerblue;
+    border-radius: 15px;
+}
+#teamMemberName
+{
+    font-size:'15px';
+    font-weight:'500';
+    margin: 0px;
+    padding-top: 5px;
+}
+#memberRole{
+    font-size:'15px';
+    margin: 0px;
+    font-weight: 400;
+}
+/* footer style */
+
+.footer1 {
+    position: relative;
+    width: 100%;
+    background: #3586ff;
+    min-height: 100px;
+    padding: 20px 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 100px;
+    filter: hue-rotate(-80deg);
+  }
+  .footContents{
+    margin-left: -80px;
+  }
+  .social-icon{
+    transform:scale(1.5);
+  }
+  .social-icon,
+  .menu {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 10px 0;
+    flex-wrap: wrap;
+    
+  }
+  
+  .social-icon__item,
+  .menu__item {
+    list-style: none;
+  }
+  
+  .social-icon__link {
+    font-size: 1rem;
+    color: #fff;
+    margin: 0 10px;
+    display: inline-block;
+    transition: 0.5s;
+  }
+  .social-icon__link:hover {
+    transform: translateY(-10px);
+  }
+  
+  .menu__link {
+    font-size: 1.2rem;
+    color: #fff;
+    margin: 0 10px;
+    display: inline-block;
+    transition: 0.5s;
+    text-decoration: none;
+    opacity: 0.75;
+    font-weight: 300;
+  }
+  
+  .menu__link:hover {
+    opacity: 1;
+  }
+  
+  .footer p {
+    color: #fff;
+    margin: 15px 0 10px 0;
+    
+    font-size: 1rem;
+    font-weight: 300;
+  }
+  #copyrightText{
+    margin-left: 160px;
+  }
+  .waves {
+    position: relative;
+    width: 100%;
+    height: 100px;
+    margin-bottom: -7px; /* To blend the waves seamlessly */
+  }
+  
+  .wave {
+    position: absolute;
+    top: -100px;
+    left: 0;
+    width: 100%;
+    height: 100px;
+    background: url("https://i.ibb.co/wQZVxxk/wave.png");
+    background-size: 1000px 100px;
+    transform: scale(1.1);
+    /* filter: hue-rotate(-10deg); */
+  }
+  
+  .wave#wave1 {
+    z-index: 1000;
+    opacity: 1;
+    bottom: 0;
+    animation: animateWaves 4s linear infinite;
+  }
+  
+  .wave#wave2 {
+    z-index: 999;
+    opacity: 0.5;
+    bottom: 10px;
+    animation: animate 4s linear infinite !important;
+  }
+  
+  .wave#wave3 {
+    z-index: 1000;
+    opacity: 0.2;
+    bottom: 15px;
+    animation: animateWaves 3s linear infinite;
+  }
+  
+  .wave#wave4 {
+    z-index: 999;
+    opacity: 0.7;
+    bottom: 20px;
+    animation: animate 3s linear infinite;
+  }
+  
+  @keyframes animateWaves {
+    0% {
+      background-position-x: 1000px;
+    }
+    100% {
+      background-position-x: 0px;
+    }
+  }
+  
+  @keyframes animate {
+    0% {
+      background-position-x: -1000px;
+    }
+    100% {
+      background-position-x: 0px;
+    }
+  }
+  

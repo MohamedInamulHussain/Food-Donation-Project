@@ -1,0 +1,420 @@
+
+  #DONATE{
+    color: #00fd00;
+  }
+  .container {
+    width: 270px;
+    height:400px;
+    margin: 20px ;
+    padding: 0 20px;
+    background-color:rgb(255, 255, 255);
+    position: relative;
+    bottom: 20px;
+    border-radius: 10px;
+    padding-top: 20px;
+  }
+
+  input{
+    padding-left:10px ;
+  }
+  .form-container {
+    max-width: 500px;
+    margin: 0 auto;
+    padding: 20px;
+   
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  #loginForm label{
+    position:absolute;
+   left:20px
+  }
+  .labelContainer{
+    width: 100%;
+    display: flex;
+    justify-content:flex-start;
+    gap: 55px;
+    padding-left: 3px;
+    padding-bottom: 5px;
+  }
+  .form-input h3{
+    margin: 0;
+    margin-left: 18%;
+    margin-bottom: 20px;
+    margin-top: -15px;
+    font-weight:600;
+  }
+  .form-input h2{
+    text-align: center;
+    font-size: 30px;
+    padding-top: 0px;
+  }
+  .form-input h5{
+    text-align: center;
+    font-weight: 500;
+    margin-top: -20px;
+  }
+  .form-input {
+    margin-bottom: 15px;
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .form-input input{
+    border: none;
+    background-color: rgb(224, 224, 224);
+    border-radius: 5px;
+    width: 270px;
+    height: 40px;
+    margin-bottom: 10px;
+    margin-inline-end: 10px;
+  
+    
+  }
+  .btn {
+    background-color: #4CAF50; /* Light Green */
+    color: #fff;
+    padding: 10px 20px;
+    width: 270px;
+    border-radius: 25px;
+    border:none;
+    text-decoration: none;
+    display: inline-block;
+    
+  }
+  #signupForm input{
+    margin-bottom: 20px;
+  }
+  #signupForm .btn{
+    margin-top: 10px;
+  }
+  p{
+    font-size: smaller;
+    margin-top: 20px;
+   
+  }
+  .footer {
+    background-color: #333; /* Dark Gray */
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+  }
+  /* main Donation page area */
+  #donationDetails{
+    background-color: rgb(255, 255, 255);
+    height: 550px;
+    width: 1300px;
+    top:-15px;
+    position: relative;
+    left: 25px;
+   
+  }
+  /* text area in donation page*/
+  #textSection{
+    width: 720px;
+    height: 500px;
+    background-color: rgba(255, 0, 0, 0);
+    position: absolute;
+   left:220px;
+   top: 30px;
+   text-align: center;
+   z-index: 0;
+  }
+  #textSection #textbox{
+    height: 320px;
+    width: 200px;
+    background-color: rgb(255, 255, 255);
+    font-size: 15px;
+    display:inline-flexbox;
+    float: inline-start;  
+    margin-top: 90px;
+    padding-inline: 20px;
+    position: relative;
+    left: 170px;
+    bottom: 70px;
+    color: #4CAF50;
+  }
+  #textSection p{
+    text-align: justify;
+    
+  }
+/* dash board container design */
+  .dashboardContainer{
+    width:780px;
+    height:500px;
+    background-color: rgb(255, 255, 255);
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    top:30px;
+    transform: translateY(530px);
+    left:220px;
+    z-index: 0;
+    transition: transform 1s ease-in-out;
+  }
+  /* for animation the slide from down of container */
+  .moveDashBoard{
+    transform: translateY(0px);
+  }
+  .DBscoreCard{
+    width: 350px;
+    height: 200px;
+    background-color: rgba(238, 130, 238, 0);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+  }
+  .DBscoreCard div{
+    width: 130px;
+    height: 185px;
+    float: left;
+    background-color: rgba(0, 204, 0, 0);
+    border: #4CAF50 solid 1px;
+    border-radius: 8px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin: 0;
+    padding: 0;
+  }
+  .DBscoreCard div span{
+    font-size: 70px;
+  }
+  .DBscoreCard div p{
+    padding: 0;
+    margin: 0;
+  }
+  .userLogo{
+    width:90%;
+    position: relative;
+    z-index: -2;
+    filter: brightness(0);
+    transform: translateY(350px);
+    transition: transform 1s ease-in-out;
+  }
+  .moveUser{
+    transform: translateY(-7px);
+    
+  }
+  .rightHand{
+      transform: translateX(0);
+      transition: transform 1s ease-in-out;
+  }
+  .moveRightHand{
+    transform: translateX(350px);
+  }
+  .leftHand{
+    transform: translateX(0px);
+    transition: transform 1s ease-in-out;
+  }
+  .moveLeftHand{
+    transform: translateX(-220px);
+  }
+ 
+  /* donation form area */
+  #donationDetails #formArea{
+    background-color: rgb(231, 231, 231);
+    height: 280px;
+    width: 300px;
+    padding-top: 30px;
+    padding-left: 30px;
+    padding-right: 25px;
+    position: absolute;
+    border-radius: 15px;
+    right:7px;
+    overflow-x: hidden;
+    margin-top: 10px;
+    scrollbar-width:none;
+   
+    
+    /* scroll-margin-block-end:10px; */
+    /* box-shadow: 0px 0px 5px 1px rgba(167, 167, 167, 0.342); */
+  }
+  #donationDetails input{
+    width: 200px;
+    height: 30px;
+    background-color: rgb(224, 224, 224);
+    border: none;
+  }
+  #donationDetails label{
+    font-size: 10px;
+    font-weight: 600;
+  }
+  
+  #donationDetails  #quantity{
+    width: 80px;
+  }
+  #donationDetails #timing{
+    width: 90px;
+  }
+  #donationDetails #pickupDate{
+    width: 100px;
+    margin-left: 10px;
+  }
+  /* ticker edge design */
+  #round1{
+    position:absolute;
+    height: 50px;
+    width: 50px;
+    background-color: rgb(255, 255, 255);
+    top: 40%;
+    left: -30px;
+    border-top-right-radius: 50%;
+    border-bottom-right-radius: 50%;
+  }
+  #round2{
+    position:absolute;
+    height: 50px;
+    width: 50px;
+    background-color: rgb(255, 255, 255);
+    top: 40%;
+    right: -29px;
+    border-top-left-radius: 50%;
+    border-bottom-left-radius: 50%;
+  }
+  .options{
+    height:490px;
+    width: 370px;
+    background-color: rgba(255, 255, 255, 0);
+    position: absolute;
+    right: 0px;
+    /* margin-left: 370px; */
+    /* right: -300px; */
+    
+    top:30px;
+  }
+  #formArea .btn{
+    margin-left: 15px;;
+  } 
+ /* dashboard styling */
+  .options #dashboard{
+    height: 50px;
+    width: 250px;
+    background-color:#4caf50;
+    color:white;
+    border-radius: 5px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    margin-left: 60px;
+    text-align: center;
+    font-size: 20px;
+    line-height: 50px;
+    font-family: 'poppins';
+    font-weight: 600;
+    box-shadow: 0px 0px 5px 1px rgba(167, 167, 167, 0.342);
+  }
+/* dashboard hover */
+.options #dashboard:hover{
+  background-color:#fdfdfd;
+  color:#4caf50;
+}
+  .options #choice{
+    width: 370px;
+    height: 90px;
+    display: flex;
+    gap: 20px;
+    flex-direction: row;
+    justify-content: center;
+  
+  }
+  #choice .box{
+    background-color: rgb(174, 255, 174);
+    font-size: 9px;
+    height: 80px;
+    width: 80px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    border-radius: 5px;
+  }
+  #choice .box:nth-last-child(3){
+    
+    background-color: rgb(255, 255, 255);
+    box-shadow: 0px 0px 5px 1px rgba(167, 167, 167, 0.342);
+    color:#4caf50;
+  }
+
+  #choice .box:nth-last-child(2){
+    
+    background-color: rgb(255, 255, 255);
+  }
+
+  #choice .box:nth-last-child(1){
+    
+    
+    background-color: rgb(255, 255, 255);
+  }
+
+  #choice .box:nth-last-child(1) h3{
+    padding-left: 6px;
+  }
+/* hover for the cards */
+
+#choice .box:nth-last-child(2):hover{
+  color:#4caf50;
+  box-shadow: 0px 0px 5px 1px rgba(167, 167, 167, 0.342);
+}
+  #choice .box:nth-last-child(1):hover{
+      color:#4caf50;
+      box-shadow: 0px 0px 5px 1px rgba(167, 167, 167, 0.342);
+  }
+
+  /* blob animation */
+#blobDonate{
+    position: absolute;
+    top: 160px;
+    width: 450px;
+    height: 400px;
+    overflow: hidden;
+    border-radius: 70% 30% 30% 70%/60% 40% 60% 40%;
+    background-color: #eeffef;
+    background-size: cover;
+    background-position: center center;
+    background-repeat: repeat;
+    left: -40px;
+    transform: rotate(185deg) scale(0.7);
+    z-index: 3;
+    /* opacity: 0%; */
+  }
+  #blobDonate #netralizer{
+    transform: rotate(-185deg);
+    
+    position: relative;
+    top: -40px;
+  }
+  #rightHand{
+    position: absolute;
+    animation-name: hand;
+    animation-duration: 1.5s;
+    animation-timing-function: ease-out;
+    animation-fill-mode: forwards;
+    bottom: 0px;
+  }
+  #leftHand{
+    position: absolute;
+    animation-name: hand2;
+    animation-duration: 1.5s;
+    animation-timing-function: ease-out;
+    animation-fill-mode: forwards;
+    bottom: 0px;
+  }
+  @keyframes hand{
+    0%{
+      right:-140px
+    }
+    100%{
+      right: -20px;
+    }
+  }
+  @keyframes hand2{
+    0%{
+      left:-130px
+    }
+    100%{
+      left: -10px;
+    }
+  }
+
+  

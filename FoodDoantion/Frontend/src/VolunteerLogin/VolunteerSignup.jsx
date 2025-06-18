@@ -16,7 +16,7 @@ export const VolunteerSignup = () => {
         const password = formData.get('newPassword');
 
         try {
-            const response = await fetch('http://localhost:8000/auth/volunteer-signup', {
+            const response = await fetch('https://food-donation-project-zk5l.onrender.com/auth/volunteer-signup', {
                 method: 'POST',
                 headers: { 'Content-Type': 'application/json' },
                 body: JSON.stringify({ userName, email, mobile, password })

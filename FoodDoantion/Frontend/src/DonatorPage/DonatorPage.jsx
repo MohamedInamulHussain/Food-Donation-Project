@@ -79,7 +79,7 @@ export const DonatorPage = () => {
     console.log('Submitting formData:', submissionData);
 
     try {
-      const response = await fetch('http://localhost:8000/auth/adddonation', {
+      const response = await fetch('https://food-donation-project-zk5l.onrender.com/auth/adddonation', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify(submissionData),

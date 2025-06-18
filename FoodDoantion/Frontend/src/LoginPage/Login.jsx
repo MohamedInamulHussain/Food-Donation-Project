@@ -14,7 +14,7 @@ export const Login = () => {
         const password = formData.get('password');
 
         try {
-            const response = await fetch('http://localhost:8000/auth/login', {
+            const response = await fetch('https://food-donation-project-zk5l.onrender.com/auth/login', {
                 method: 'POST',
                 headers: { 'Content-Type': 'application/json' },
                 body: JSON.stringify({ email, password })
